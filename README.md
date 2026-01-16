@@ -112,8 +112,8 @@ The code is organized into a modular structure to ensure it is easy to read and 
 
 ## If have GPU 
  use V/S code
- use main_vs.py & requirement.txt
+ use main_vs.py & requirements.txt
 ## Dont have GPU
   use CoLab
-  use mainCOlab.ipynb
+  use mainColab.ipynb
   
