@@ -109,3 +109,11 @@ The code is organized into a modular structure to ensure it is easy to read and 
 
 ## Example Output
  You can use markdown image links like ![Original Image](path/to/original.jpg) and ![Restored Image](path/to/restored.png))
+
+## If have GPU 
+ use V/S code
+ use main_vs.py & requirement.txt
+## Dont have GPU
+  use CoLab
+  use mainCOlab.ipynb
+  
