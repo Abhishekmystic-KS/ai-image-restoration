@@ -94,10 +94,18 @@ Replace 'my_image.jpg' with the path to your input image.
 
 4. **Download the Result**: After execution, the restored image (e.g., restored_my_image.png) will be saved in your Colab environment, which you can then download.
 
-## Model Details
+## 🏗️ General Project Structure
 
-The core of this project is the ESRGAN (Enhanced Super-Resolution Generative Adversarial Network) model, specifically captain-pool/esrgan-tf2/1 from TensorFlow Hub. This model is designed for single-image super-resolution, significantly enhancing the perceptual quality of images by generating realistic textures.
+The code is organized into a modular structure to ensure it is easy to read and memory-efficient:
+
+1. **Environment Setup:** Checking for TensorFlow and ensuring the Streamlit server is active.
+2. **Resource Loading:** Downloading the pre-trained ESRGAN model from TensorFlow Hub once and caching it.
+3. **Image Pipeline:**
+   - **Input:** Accepting user uploads via Streamlit.
+   - **Preprocessing:** Resizing images to a safe range (< 600px) and converting them into mathematical tensors.
+   - **Inference:** The AI model processes the image to add detail and sharpness.
+   - **Post-processing:** Clipping values to remove "purple tint" artifacts and converting back to a viewable image format.
+4. **Display/Export:** Showing the "Before and After" comparison and providing a download link.
 
 ## Example Output
-
-(You might want to add a section here with 'before' and 'after' images to visually demonstrate the restoration. You can use markdown image links like ![Original Image](path/to/original.jpg) and ![Restored Image](path/to/restored.png))
+ You can use markdown image links like ![Original Image](path/to/original.jpg) and ![Restored Image](path/to/restored.png))
